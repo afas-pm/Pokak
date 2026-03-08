@@ -40,7 +40,7 @@ const CATEGORIES_DATA = [
 function CategoryItem({ name, img }) {
     return (
         <div className="flex flex-col items-center justify-between p-3 bg-[#27AE601A] rounded-[16px] h-[135px] w-full cursor-pointer hover:shadow-sm hover:scale-[1.02] transition-all">
-            <span className="text-[12px] font-semibold text-gray-800 text-center leading-tight">
+            <span className="text-[14px] font-semibold text-gray-800 text-center leading-tight">
                 {name}
             </span>
             <div className="w-full h-[80px] flex items-end justify-center">

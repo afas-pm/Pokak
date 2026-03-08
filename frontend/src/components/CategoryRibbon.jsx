@@ -77,21 +77,21 @@ export default function CategoryRibbon() {
     return (
         <div className="w-full bg-[#ECF0F1]">
             {/* Maximum width container matching navbar */}
-            <div className="max-w-[1440px] mx-auto px-6 pt-16 pb-6">
-                <div className="flex items-center justify-center gap-4 overflow-x-auto no-scrollbar pt-2 pb-4 -mx-2 px-2">
+            <div className="max-w-[1440px] mx-auto px-4 md:px-6 pt-16 pb-6">
+                <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-10 gap-3 md:gap-4 overflow-hidden">
                     {categories.map((cat) => (
                         <div
                             key={cat.id}
                             className={`
-                relative flex flex-col items-center shrink-0 cursor-pointer
-                w-[124px] h-[152px] bg-white rounded-[16px] overflow-hidden shadow-sm
-                transition-transform hover:-translate-y-1
-                border border-[#27ae6040]
-              `}
+                                relative flex flex-col items-center cursor-pointer w-full
+                                h-[145px] md:h-[152px] bg-white rounded-[16px] overflow-hidden shadow-sm
+                                transition-transform hover:-translate-y-1
+                                border border-[#27ae6040]
+                            `}
                         >
                             {/* Title Text */}
-                            <div className="p-3 pb-0 z-20 text-center">
-                                <h3 className="text-[15px] font-semibold text-gray-800 leading-[1.2] whitespace-pre-line">
+                            <div className="p-2 md:p-3 pb-0 z-20 text-center">
+                                <h3 className="text-[13px] md:text-[15px] font-semibold text-gray-800 leading-[1.2] whitespace-pre-line">
                                     {cat.title}
                                 </h3>
                             </div>
@@ -99,7 +99,7 @@ export default function CategoryRibbon() {
                             {/* Image at the bottom */}
                             <div className="absolute bottom-0 left-0 w-full flex items-end justify-center z-0">
                                 {cat.image && (
-                                    <img src={cat.image} alt={cat.title} className="w-full h-[85px] object-cover object-top" />
+                                    <img src={cat.image} alt={cat.title} className="w-full h-[75px] md:h-[85px] object-cover object-top" />
                                 )}
                             </div>
 
