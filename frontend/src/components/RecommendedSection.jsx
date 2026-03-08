@@ -89,10 +89,10 @@ export default function RecommendedSection() {
                     </button>
                 </div>
 
-                {/* Products row - justified, no overflow */}
-                <div className="flex justify-between gap-4 overflow-hidden pt-1">
+                {/* Products row - scrollable on mobile */}
+                <div className="flex gap-4 overflow-x-auto pb-4 pt-1 snap-x no-scrollbar">
                     {SAMPLE_PRODUCTS.map((product, idx) => (
-                        <div key={idx} className="flex-1 min-w-0">
+                        <div key={idx} className="flex-shrink-0 w-[180px] sm:flex-1 sm:min-w-0 snap-start">
                             <ProductCard product={product} />
                         </div>
                     ))}
