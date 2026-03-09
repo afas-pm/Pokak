@@ -1,12 +1,5 @@
 @import "tailwindcss";
 
-@theme {
-  --color-brand: #26a541; /* From image: green badges and buttons */
-  --color-brand-light: #edfaec; /* From Flash Sale section background */
-  --color-brand-dark: #1b8535;
-  --color-accent: #f59e0b; /* From Try Now button */
-}
-
 @layer base {
   body {
     background-color: #eff3f4; /* From image: overall background */
